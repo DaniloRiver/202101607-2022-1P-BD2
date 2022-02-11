@@ -19,10 +19,10 @@ WHERE f.estado = "PENDIENTE";
 
 ################################################# Ejercicio 6 ######################################################
 
- /*# variables Ejecución :
+ # variables Ejecución :
 set @v_idAsesor = 14; 
 set @v_idCliente = 101;
-set @v_cantClientes = 0;*/
+set @v_cantClientes = 0;
 
  # variables Ejecución :
 set @v_idAsesor = 1; 
