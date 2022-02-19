@@ -1,5 +1,6 @@
 
-########################## EjerciciO No1 ############################################
+########################## EjerciciO No1 ############# Jose Danilo Rivera Barahona ###############################
+
 #Cree  procedimiento almacenado "sp_guardar_subscriptor" para actualizar los
 # campos de un subscriptor existente en la base de datos.
 select * from bd_sample.tbl_subscriptores;
@@ -51,7 +52,8 @@ select id_subscriptor, nombres, apellidos
 from bd_sample.tbl_subscriptores
 where id_subscriptor = 17;
 
-########################## EjerciciO No2 ############################################
+########################## EjerciciO No2 ############### Jose Danilo Rivera Barahona #############################
+
 #Cree el procedimiento almacenado "sp_guardar_producto" para crear nuevos productos, 
 #debe recibir los parámetros el nombre, la descripción y el precio de costo del producto.
 # El precio de venta debe ser calculado en razón de un 125% del precio de costo. 
@@ -108,7 +110,7 @@ from bd_sample.tbl_productos
 where id_producto =(select max(id_producto)
 from bd_sample.tbl_productos);
 
-########################## EjerciciO No3 ############################################
+########################## EjerciciO No3 ################### Jose Danilo Rivera Barahona #########################
 
 #Cree el procedimiento almacenado "sp_guardar_factura" que registre una  
 #nueva factura según los parámetros recibidos.
@@ -178,7 +180,7 @@ from bd_sample.tbl_facturas
 where fecha_emision =(select max(fecha_emision)
 from bd_sample.tbl_facturas) and id_subscriptor=14;
 
-########################## EjerciciO No4 ############################################
+########################## EjerciciO No4 ######################### Jose Danilo Rivera Barahona ###################
 #Cree el procedimiento almacenado "sp_procesar_factura " que registre el proceso de facturación:
 # Registra un producto de acuerdo un numero de factura en la tabla ítems factura
 # Actualiza los valores de la factura con los valores totales
