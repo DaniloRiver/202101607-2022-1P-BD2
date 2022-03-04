@@ -32,7 +32,7 @@ declare v_saldo                int;
  
 #controlador if
 
-	if  @v_saldo  >= @v_cantidad  then  
+	if  v_saldo  >= v_cantidad  then  
          
 			 insert into bd_factsv2.tbl_productos_facturados (
 			   idProducto, idFactura, cantidad
