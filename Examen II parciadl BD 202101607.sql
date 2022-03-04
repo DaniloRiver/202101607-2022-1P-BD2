@@ -4,7 +4,7 @@ DROP PROCEDURE bd_sample.SP_FACTURA;
 
 DELIMITER //
 # crear procedimiento
-CREATE PROCEDURE bd_sample.SP_FACTURA(
+CREATE PROCEDURE bd_factsv2.SP_FACTURA(
 	in p_idFactura      	int, 
 	in p_idProducto         int,
     in p_cantidad           int     
@@ -63,7 +63,7 @@ declare v_saldo                int;
 END;
 
 # Ejecutar procedimiento 
-CALL bd_sample.SP_FACTURA(
+CALL bd_factsv2.SP_FACTURA(
 	1004, 					# p_id_producto  
 	6 ,				        # p_id_factura
 	6                       # p_cantidad
